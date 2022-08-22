@@ -1,1 +1,12 @@
-# MakeChangeProject
+# MakeChange.java Week 1 Assignment
+
+##Description
+This program takes an item price and amount tendered from a user as a double, and calculates the amount for the attendant to return to the customer. It begins by initializing a scanner to receive inputs from the user and storing them as meaningful variables. Our main will then use an if and else if statements to determine whether the customer has tendered the exact amount needed, too little , or more than the price of the item. For exact amount and too little tendered, we will display a message to the attendant that there was no change to be returned, or not enough money tendered. If the program finds the customer tendered more than the item amount, it will call another method called changeToReturn() which will take the change amount in dollars from the main method as an argument. The program converts to change in cents from dollars, and rounds to the nearest cent by adding .5 cents to the amount and type casting it to an int. changeToReturn() then uses a while loop, along with if else if statements to continuously determine which bill or coin should be returned to the customer. The method beings with the highest bill we are utilizing ($20) and traverses down to the smallest coin we are using (penny). The program will determine the highest bill or coin that should be returned each time. It does this by dividing the change in cents by the bill/coin amount in cents and performing an operation if that amount is greater than 1. If it is, then it will print the amount of bills/coins to return for that bill/coin. It will then utilize the modulo operator to get the remaining change to be returned to the customer, and continue traversing through the other monies.
+
+Once the change has been returned, an error message displayed for not enough money tendered, or exact change is entered, the program will end.
+
+##What I learned
+I learned that if statements can be very particular. I initially started the program off with all of the if else if statments and just nested if statements because I thought it would work out better, but I found that if the first if statement didn't meet the requirements, it wouldn't move on to any of the other statements. I also learned how much more readable methods make your main method. Once I finished writing the program, I realized I could have used a couple more methods to reduce the lines of code in the main method even further. I am excited to dive into methods even further and continue keeping readability at the forefront of my code writing.
+
+##Technologies used
+Java, Eclipse, Git, GitHub, Terminal, Zoom
